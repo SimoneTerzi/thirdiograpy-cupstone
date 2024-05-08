@@ -1,0 +1,56 @@
+GET http://localhost:3030/getPhotosPortfolio
+
+###
+
+POST http://localhost:3030/createPhotoPortfolio
+Content-Type: application/json
+
+{
+  "title": "foto prova 26",
+  "description": "foto prova 26",
+  "url": "https://drive.google.com/fie/d/1Lmx1kbnd5GKVCwvol0ONOCxwF__8e6Et/view?usp=drive_lin/"
+}
+
+###
+
+GET http://localhost:3030/getPhotoPortfolio/663b7e58922d3dbabfa2cfcc
+
+###
+
+PATCH http://localhost:3030/updatePhotoPortfolio/663b7e58922d3dbabfa2cfcc
+Content-Type: application/json
+
+{
+  "title": "Nuovo Titolo"
+}
+
+###
+
+DELETE http://localhost:3030/deletePhotoPortfolio/663b7e58922d3dbabfa2cfcc
+
+###
+
+POST http://localhost:3030/createPhotoPortfolio
+Content-Type: application/json
+
+{
+  "title": "foto con commento",
+  "description": "foto con commento",
+  "url": "https://drive.google.com/fie/d/1Lmx1kbnd5GKVCwvol0ONOCxwF__8e6Et/view?usp=drive_lin/",
+  "commentText": "Bellissima foto!",
+  "rating": 5
+}
+
+###
+
+POST http://localhost:3030/addComment/663b86c7bb7bf97a4257e545
+Content-Type: application/json
+
+{
+  "text": "Un commento per la fot",
+  "rating": 2
+}
+
+###
+
+DELETE http://localhost:3030/deleteComment/663b86c7bb7bf97a4257e545/663b8734bb7bf97a4257e54f
