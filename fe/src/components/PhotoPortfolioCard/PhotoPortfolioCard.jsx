@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import { fetchPhotos } from '../Axios/Axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useNavigate } from 'react-router-dom'; 
 
 function PhotoPortfolioCard() {
   const [photos, setPhotos] = useState([]);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     async function fetchData() {
@@ -19,6 +20,11 @@ function PhotoPortfolioCard() {
     fetchData();
   }, []);
 
+  const handleCardClick = (photoId) => {
+    
+    navigate(`/photo-page/${photoId}`);
+  };
+
   if (!photos.length) {
     return <div>Loading...</div>;
   }
@@ -28,15 +34,16 @@ function PhotoPortfolioCard() {
       <Row xs={1} md={2} lg={3} xl={4} className="g-4 justify-content-center">
         {photos.map((photo) => (
           <Col key={photo._id} className="d-flex align-items-stretch">
-            <Card className="w-100" style={{ margin: '1rem' }}>
-              <Card.Img variant="top" src={photo.url} />
-              <Card.Body>
-                <Card.Title>{photo.title}</Card.Title>
-                <Card.Text>
-                  {photo.description}
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
+            <Card
+              className="w-100"
+              style={{ margin: '1rem', cursor: 'pointer' }}
+              onClick={() => handleCardClick(photo._id)}
+            >
+              <Card.Img
+                variant="top"
+                src={photo.url}
+                style={{ objectFit: 'cover', height: '250px' }} 
+              />
             </Card>
           </Col>
         ))}

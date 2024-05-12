@@ -88,8 +88,20 @@ async function getPhotoByDescription(description) {
   }
 }
 
+async function getPhotoById(photoId) {
+  try {
+    const response = await axiosInstance.get(`/api/photo-portfolio/getPhotoPortfolioById/${photoId}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching photo by id:", error);
+    return null;
+  }
+}
+
+
 // Export di tutte le funzioni
 export {
+  getPhotoById,
   fetchPhotos,
   updatePhoto,
   addComment,
