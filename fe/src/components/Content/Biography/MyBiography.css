@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+.BioMain{
+  padding-bottom: 5rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#BioDescription {
+  text-align: center;
+  border: double;
+  font-family: "Open Sans", sans-serif;
+  color: #8c7a6b;
+  font-size: 1.2rem;
+}
+
+.BioTitle {
+  margin: 0;
+  font-family: "Caesar Dressing", system-ui;
+  color: #8c7a6b;
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+
+.EthicalPH {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.BioButton {
+  font-family: "Caesar Dressing", system-ui;
+  background-color: #8c7a6b;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  color: #d0cfc4;
+  
+}
+
+.BioButton:hover{
+  background-color: #d0cfc4;
+  color: #8c7a6b;
+  border: double;
+}
+

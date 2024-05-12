@@ -1,16 +1,15 @@
 import MyFooter from "../components/Footer/MyFooter";
 import MyNavbar from "../components/Navbar/MyNavbar";
-import MyHomepage from "../components/Content/Homepage/MyHomepage";
+import MyBiography from "../components/Content/Biography/MyBiography";
 
-const Homepage = ({ children }) => {
+const Biography = ({ children }) => {
   return (
     <>
       <MyNavbar />
-      <MyHomepage />
-      {children}
+      <MyBiography />
       <MyFooter />
     </>
   );
 };
 
-export default Homepage;
+export default Biography;

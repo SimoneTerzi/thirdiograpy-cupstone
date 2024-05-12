@@ -8,10 +8,7 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="Navbar">
       <Container>
-        <Navbar.Brand
-          href="#home"
-          className="justify-content-center navarbrand"
-        >
+        <Navbar.Brand className="justify-content-center navarbrand">
           <img
             src="https://res.cloudinary.com/dtem45qog/image/upload/v1715430959/Logo_Thirdiograpy-favicon_orytj3.png"
             width="80"
@@ -41,22 +38,22 @@ function MyNavbar() {
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
-          
               Portfolio
-            </Nav.Link>
-            <Nav.Link
-              href="#contatti"
-              className="Navlink"
-              style={{ marginRight: "3rem" }}
-            >
-              Contatti
             </Nav.Link>
             <Nav.Link
               href="#info"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
-              Info
+              Biografia
+            </Nav.Link>
+
+            <Nav.Link
+              href="#info"
+              className="Navlink"
+              style={{ marginRight: "3rem" }}
+            >
+              Biografia
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

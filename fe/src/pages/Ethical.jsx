@@ -1,16 +1,15 @@
 import MyFooter from "../components/Footer/MyFooter";
 import MyNavbar from "../components/Navbar/MyNavbar";
-import MyHomepage from "../components/Content/Homepage/MyHomepage";
+import MyEthicalPage from "../components/Content/EthicalPage/MyEthicalPage";
 
-const Homepage = ({ children }) => {
+const Ethical = ({ children }) => {
   return (
     <>
       <MyNavbar />
-      <MyHomepage />
-      {children}
+      <MyEthicalPage />
       <MyFooter />
     </>
   );
 };
 
-export default Homepage;
+export default Ethical;

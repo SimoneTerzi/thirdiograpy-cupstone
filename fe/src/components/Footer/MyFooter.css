@@ -34,3 +34,7 @@
     width: 40px;
     height: 40px;
 }
+
+.iconStyle :hover {
+    color: #000000;
+}

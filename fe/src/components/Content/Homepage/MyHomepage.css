@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d0cfc4;
+  text-align: center;
+}
+
+.Home {
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 6rem;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-family: "Caesar Dressing", system-ui;
+  color: #8c7a6b;
+  text-align: center;
+}
+
+.Ethical {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #8c7a6b;
+  padding-bottom: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#Biograpy {
+  text-align: center;
+  border: double;
+  font-family: "Open Sans", sans-serif;
+  color: #8c7a6b;
+  font-size: 1.2rem;
+}
+
+.card {
+  margin: 1rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.card-img-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8c7a6b;
+  opacity: 1;
+}
+
+
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.BiograpyButton {
+  font-family: "Caesar Dressing", system-ui;
+  background-color: #8c7a6b;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  color: #d0cfc4;
+}
+
+.BiograpyButton:hover{
+  background-color: #d0cfc4;
+  color: #8c7a6b;
+  border: double;
+}
+
+.portfolio {
+  margin: 0;
+  font-family: "Caesar Dressing", system-ui;
+  color: #8c7a6b;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.EthicalPH {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
