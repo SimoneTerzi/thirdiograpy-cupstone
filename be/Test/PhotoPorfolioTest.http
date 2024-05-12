@@ -1,36 +1,42 @@
-GET http://localhost:3030/getPhotosPortfolio
+
+GET http://localhost:3030/api/photo-portfolio/getPhotosPortfolio
 
 ###
 
-POST http://localhost:3030/createPhotoPortfolio
+
+GET http://localhost:3030/api/photo-portfolio/getPhotoPortfolioByTitle/Logo
+
+###
+
+POST http://localhost:3030/api/photo-portfolio/createPhotoPortfolio
 Content-Type: application/json
 
 {
-  "title": "foto prova 26",
-  "description": "foto prova 26",
-  "url": "https://drive.google.com/fie/d/1Lmx1kbnd5GKVCwvol0ONOCxwF__8e6Et/view?usp=drive_lin/"
+  "title": "Diana",
+  "description": "Diana",
+  "url": "https://res.cloudinary.com/dtem45qog/image/upload/v1715372905/Senza_titolo-diana_hgb3me.jpg"
 }
 
 ###
 
-GET http://localhost:3030/getPhotoPortfolio/663b7e58922d3dbabfa2cfcc
+GET http://localhost:3030/api/photo-portfolio/getPhotoPortfolio/663b7e58922d3dbabfa2cfcc
 
 ###
 
-PATCH http://localhost:3030/updatePhotoPortfolio/663b7e58922d3dbabfa2cfcc
+PATCH http://localhost:3030/api/photo-portfolio/updatePhotoPortfolio/663ce63eba5e45efbe5c9865
 Content-Type: application/json
 
 {
-  "title": "Nuovo Titolo"
+  "url": "https://drive.google.com/file/d/1ccxTjEmEHRLk_lOHiapjFShVfuCj6aPt/view?usp=sharing"
 }
 
 ###
 
-DELETE http://localhost:3030/deletePhotoPortfolio/663b7e58922d3dbabfa2cfcc
+DELETE http://localhost:3030/api/photo-portfolio/deletePhotoPortfolio/663b738e9f1e8131ab19b7c0
 
 ###
 
-POST http://localhost:3030/createPhotoPortfolio
+POST http://localhost:3030/api/photo-portfolio/createPhotoPortfolio
 Content-Type: application/json
 
 {
@@ -43,14 +49,14 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3030/addComment/663b86c7bb7bf97a4257e545
+POST http://localhost:3030/api/photo-portfolio/addComment/663ce63eba5e45efbe5c9865
 Content-Type: application/json
 
 {
-  "text": "Un commento per la fot",
-  "rating": 2
+  "text": "Bello lo scricciolo",
+  "rating": 5
 }
 
 ###
 
-DELETE http://localhost:3030/deleteComment/663b86c7bb7bf97a4257e545/663b8734bb7bf97a4257e54f
+DELETE http://localhost:3030/api/photo-portfolio/deleteComment/663b86c7bb7bf97a4257e545/663b8734bb7bf97a4257e54f

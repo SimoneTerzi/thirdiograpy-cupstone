@@ -41,6 +41,4 @@ const PhotoPorfolioSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Photosporfoliomodel", PhotoPorfolioSchema);
-
-module.exports = mongoose.model("Photosporfoliomodel", PhotoPorfolioSchema);
+module.exports = mongoose.model("PhotoPortfolioModel", PhotoPorfolioSchema);

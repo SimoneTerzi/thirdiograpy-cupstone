@@ -1,24 +1,23 @@
-GET http://localhost:3030/getPhotosDownload
+GET http://localhost:3030/api/photo-download/getPhotosDownload
 
 ###
 
-POST http://localhost:3030/createPhotoDownload
+POST http://localhost:3030/api/photo-download/createPhotoDownload
 Content-Type: application/json
 
 {
-  "title": "foto 5",
+  "title": "foto",
   "description": "foto 35",
-  "url": "https://drive.google.com/fil/d/1G416C8ZtRJKaR5cfYQHPNfmx28UTAHx3/view?usp=drive_link"
+  "url": "https://drive.google.com/fil/d/1G418ZtRJKaR5cfYQHPNfmx28UTAHx389/view?usp=drive_link"
 }
 
+###
+
+GET http://localhost:3030/api/photo-download/getPhotoDownload/663b7d691e23627fad976556
 
 ###
 
-GET http://localhost:3030/getPhotoDownload/663b7d691e23627fad976556
-
-###
-
-PATCH http://localhost:3030/updatePhotoDownload/663b7d691e23627fad976556
+PATCH http://localhost:3030/api/photo-download/updatePhotoDownload/663b7d691e23627fad976556
 Content-Type: application/json
 
 {
@@ -27,4 +26,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3030/deletePhotoDownload/663b7d691e23627fad976556
+DELETE http://localhost:3030/api/photo-download/deletePhotoDownload/663b7d691e23627fad976556

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.footer {
+    background-color: #8C7A6B; 
+}
+
+.FooterCont {
+    padding-top: 3rem; 
+    padding-bottom: 3rem; 
+    background-color: #8C7A6B;
+}
+
+.h3title {
+    font-family: "Caesar Dressing", system-ui;
+    padding-bottom: 1rem; 
+    color: #D0CFC4;
+}
+  
+.contact {
+    color: #A4978E ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+.contactSD {
+    color: #A4978E ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.iconStyle {
+    color: #A4978E;
+    width: 40px;
+    height: 40px;
+}

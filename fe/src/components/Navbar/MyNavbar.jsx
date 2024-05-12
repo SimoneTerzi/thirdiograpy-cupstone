@@ -1,23 +1,67 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./MyNavbar.css";
 
 function MyNavbar() {
   return (
-    <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+    <Navbar expand="lg" className="Navbar">
+      <Container>
+        <Navbar.Brand
+          href="#home"
+          className="justify-content-center navarbrand"
+        >
+          <img
+            src="https://res.cloudinary.com/dtem45qog/image/upload/v1715430959/Logo_Thirdiograpy-favicon_orytj3.png"
+            width="80"
+            height="80"
+            className="d-inline-block align-center"
+            alt="Thirdiography Logo"
+            style={{ marginRight: "5px" }}
+          />
+          <strong>Thirdiograpy</strong>
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav
+            className="justify-content-center NavAcc"
+            style={{ width: "70%" }}
+          >
+            <Nav.Link
+              href="#home"
+              className="Navlink"
+              style={{ marginRight: "3rem", marginLeft: "25px" }}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="#elisa"
+              className="Navlink"
+              style={{ marginRight: "3rem" }}
+            >
+          
+              Portfolio
+            </Nav.Link>
+            <Nav.Link
+              href="#contatti"
+              className="Navlink"
+              style={{ marginRight: "3rem" }}
+            >
+              Contatti
+            </Nav.Link>
+            <Nav.Link
+              href="#info"
+              className="Navlink"
+              style={{ marginRight: "3rem" }}
+            >
+              Info
+            </Nav.Link>
           </Nav>
-        </Container>
-      </Navbar>
-    </>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

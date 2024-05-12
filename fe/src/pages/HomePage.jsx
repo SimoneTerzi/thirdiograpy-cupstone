@@ -1,9 +1,15 @@
-import MyLayout from "../Layout/MyLayout"
+import MyFooter from "../components/Footer/MyFooter";
+import MyNavbar from "../components/Navbar/MyNavbar";
+import PhotoPortfolioCard from "../components/PhotoPortfolioCard/PhotoPortfolioCard";
 
-const Homepage = () => {
+const Homepage = ({ children }) => {
   return (
-    <MyLayout>
-    </MyLayout>
+    <>
+      <MyNavbar />
+      <PhotoPortfolioCard />
+      {children}
+      <MyFooter />
+    </>
   );
 };
 

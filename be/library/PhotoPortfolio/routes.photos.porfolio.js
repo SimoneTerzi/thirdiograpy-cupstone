@@ -41,6 +41,31 @@ router.get("/getPhotoPortfolio/:id", async (request, response) => {
   }
 });
 
+
+// RECUPERA FOTO PER TITOLO
+router.get("/getPhotoPortfolioByTitle/:title", async (request, response) => {
+  const { title } = request.params;
+
+  try {
+    const photo = await Photosporfoliomodel.findOne({ title });
+    if (!photo) {
+      return response.status(404).send({
+        statusCode: 404,
+        message: "The requested photo does not exist!",
+      });
+    }
+
+    response.status(200).send(photo);
+  } catch (e) {
+    console.error(e);
+    response.status(500).send({
+      statusCode: 500,
+      message: "Internal Server Error",
+      error: e.message,
+    });
+  }
+});
+
 // CREA FOTO
 router.post("/createPhotoPortfolio", async (request, response) => {
   const { title, description, url } = request.body;
@@ -110,6 +135,7 @@ router.post("/createPhotoPortfolio", async (request, response) => {
 });
 
 // AGGIUNGI COMMENTO E VOTO AD UNA FOTO
+
 router.post("/addComment/:id", async (request, response) => {
   const { id } = request.params;
   const { text, rating } = request.body;
@@ -148,6 +174,7 @@ router.post("/addComment/:id", async (request, response) => {
 });
 
 // ELIMINA COMMENTO
+
 router.delete(
   "/deleteComment/:photoId/:commentId",
   async (request, response) => {
@@ -188,6 +215,7 @@ router.delete(
 );
 
 // MODIFICA FOTO
+
 router.patch("/updatePhotoPortfolio/:id", async (request, response) => {
   const { id } = request.params;
 
@@ -221,6 +249,7 @@ router.patch("/updatePhotoPortfolio/:id", async (request, response) => {
 });
 
 // DELETE
+
 router.delete("/deletePhotoPortfolio/:id", async (request, response) => {
   const { id } = request.params;
   try {
