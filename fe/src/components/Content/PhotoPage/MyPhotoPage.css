@@ -53,4 +53,17 @@
     text-align: center;
   }
 
- 
+  .ModalLascia {
+    font-family: "Caesar Dressing", system-ui;
+    color: #8c7a6b;
+    text-align: center;
+    border: double;
+    background-color: #d0cfc4;
+  }
+
+  .ModalForm {
+    color: #8c7a6b;
+    text-align: center;
+    border: double;
+    margin-bottom: 2rem;
+  }
