@@ -7,6 +7,7 @@
     font-family: "Caesar Dressing", system-ui;
     color: #8c7a6b;
     text-align: center;
+    padding-bottom: 2rem;
   }
 
   .PhotoDescription {
@@ -28,3 +29,28 @@
     margin-top: 2rem;
     
   }
+
+  .MyPhotoButton:hover{
+    background-color: #d0cfc4;
+    color: #8c7a6b;
+    border: double;
+  }
+  
+
+  .CommentsContainer{
+    text-align: center;
+    border: double;
+    font-family: "Open Sans", sans-serif;
+    color: #8c7a6b;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .CommentTitle {
+    font-size: 2rem;
+    font-family: "Caesar Dressing", system-ui;
+    color: #8c7a6b;
+    text-align: center;
+  }
+
+ 

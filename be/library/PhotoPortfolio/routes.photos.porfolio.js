@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const router = express.Router();
 const Photosporfoliomodel = require("./models.photo.portfolio");
@@ -269,6 +271,37 @@ router.delete("/deletePhotoPortfolio/:id", async (request, response) => {
     });
   }
 });
+
+//Recupara i comment e i rating tramide ID
+
+router.get("/getPhotoPortfolioComments/:id", async (request, response) => {
+  const { id } = request.params;
+
+  try {
+    const photo = await Photosporfoliomodel.findById(id);
+    if (!photo) {
+      return response.status(404).send({
+        statusCode: 404,
+        message: "The requested photo does not exist!!",
+      });
+    }
+
+    const comments = photo.comments.map(comment => ({
+      text: comment.text,
+      rating: comment.rating
+    }));
+
+    response.status(200).send(comments);
+  } catch (e) {
+    console.error(e);
+    response.status(500).send({
+      statusCode: 500,
+      message: "Internal Server Error",
+      error: e.message,
+    });
+  }
+});
+
 
 module.exports = router;
 

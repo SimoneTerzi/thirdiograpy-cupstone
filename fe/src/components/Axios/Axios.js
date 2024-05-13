@@ -98,6 +98,15 @@ async function getPhotoById(photoId) {
   }
 }
 
+async function getPhotoCommentsById(photoId) {
+  try {
+    const response = await axiosInstance.get(`/api/photo-portfolio/getPhotoPortfolioComments/${photoId}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching comments:", error);
+    throw error;
+  }
+}
 
 // Export di tutte le funzioni
 export {
@@ -110,5 +119,6 @@ export {
   createPhoto,
   getPhotoByTitle,
   getPhotoByUrl,
-  getPhotoByDescription
+  getPhotoByDescription,
+  getPhotoCommentsById
 };
