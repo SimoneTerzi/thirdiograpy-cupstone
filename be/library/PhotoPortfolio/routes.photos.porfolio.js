@@ -18,7 +18,7 @@ router.get("/getPhotosPortfolio", async (request, response) => {
 });
 
 // RECUPERA FOTO PER ID
-router.get("/getPhotoPortfolio/:id", async (request, response) => {
+router.get("/getPhotoPortfolioById/:id", async (request, response) => {
   const { id } = request.params;
 
   try {
@@ -40,7 +40,6 @@ router.get("/getPhotoPortfolio/:id", async (request, response) => {
     });
   }
 });
-
 
 // RECUPERA FOTO PER TITOLO
 router.get("/getPhotoPortfolioByTitle/:title", async (request, response) => {
@@ -272,3 +271,4 @@ router.delete("/deletePhotoPortfolio/:id", async (request, response) => {
 });
 
 module.exports = router;
+

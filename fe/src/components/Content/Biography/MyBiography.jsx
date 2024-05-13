@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "./MyBiography.css";
-import Homepage from "../../../pages/HomePage";
+
 
 const MyBiography = () => {
   return (
@@ -28,8 +28,6 @@ const MyBiography = () => {
       </p>
 
       <Link to="/#home">
-        {" "}
-        {Homepage}
         <Button className="BioButton" variant="primary">
           Return to Homepage
         </Button>

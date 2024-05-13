@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { fetchPhotos } from "../../Axios/Axios";
 import "./MyHomepage.css";
-import Biography from "../../../pages/Biography";
-import Ethical from "../../../pages/Ethical";
 
 
 const MyHomepage = () => {
@@ -46,7 +44,7 @@ const MyHomepage = () => {
             </Col>
           ))}
         </Row>
-        <Link to="Portfolio"> {Biography}
+        <Link to="/Portfolio">
           <Button className="BiograpyButton" variant="primary">
             VIEW FULL PORTFOLIO
           </Button>
@@ -62,7 +60,7 @@ const MyHomepage = () => {
           le emozioni che esse.....
         </p>
 
-        <Link to="/biography"> 
+        <Link to="/biography">
           <Button className="BiograpyButton" variant="primary">
             VIEW FULL BIOGRAPHY
           </Button>
@@ -85,9 +83,9 @@ const MyHomepage = () => {
           rispetto dei....
         </p>
 
-        <Link to="/Ethical"> {Ethical}
+        <Link to="/Ethical">
           <Button className="BiograpyButton" variant="primary">
-          About Ethical Photography
+            About Ethical Photography
           </Button>
         </Link>
       </main>
@@ -96,5 +94,3 @@ const MyHomepage = () => {
 };
 
 export default MyHomepage;
-
-

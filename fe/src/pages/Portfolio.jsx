@@ -7,6 +7,7 @@ const Portfolio = ({ children }) => {
     <>
       <MyNavbar />
       <MyPortfolio />
+      {children}
       <MyFooter />
     </>
   );

@@ -28,15 +28,19 @@ const MyPortfolio = () => {
   return (
     <main className="PortfoliolMain justify-content-center">
       <h2 className="PortfolioTitle">My Portfolio</h2>
-      <div className="PhotoGrid justify-content-center">
-      <Row xs={1} md={2} lg={3} className="justify-content-center">
-        {photos.map((photo) => (
-           <Col key={photo._id} className="d-flex align-items-stretch">
-           <Card className="w-100" style={{ margin: "1rem" }}>
-             <Card.Img variant="top" src={photo.url} alt={photo.title} />
-           </Card>
-         </Col>
-        ))}
+      <div className="PhotoGrid">
+        <Row xs={1} sm={2} md={3} lg={4} className="justify-content-center PhotoGridRow">
+          {photos.map((photo) => (
+            <Col key={photo._id} className="d-flex align-items-stretch">
+              <div>
+                <Link to={`/photo/${photo._id}`}>
+                  <Card className="w-100" style={{ margin: "1rem" }}>
+                    <Card.Img variant="top" src={photo.url} alt={photo.title} />
+                  </Card>
+                </Link>
+              </div>
+            </Col>
+          ))}
         </Row>
       </div>
       <Link to="/#home">
@@ -49,3 +53,4 @@ const MyPortfolio = () => {
 };
 
 export default MyPortfolio;
+

@@ -7,6 +7,7 @@ const Biography = ({ children }) => {
     <>
       <MyNavbar />
       <MyBiography />
+      {children}
       <MyFooter />
     </>
   );

@@ -7,6 +7,7 @@ const Ethical = ({ children }) => {
     <>
       <MyNavbar />
       <MyEthicalPage />
+      {children}
       <MyFooter />
     </>
   );
