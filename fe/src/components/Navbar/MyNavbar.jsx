@@ -34,7 +34,7 @@ function MyNavbar() {
               Home
             </Nav.Link>
             <Nav.Link
-              href="/PhotoPage"
+              href="/Portfolio"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >

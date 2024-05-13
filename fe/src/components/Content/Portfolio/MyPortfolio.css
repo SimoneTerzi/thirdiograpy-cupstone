@@ -1,3 +1,5 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
@@ -46,4 +48,16 @@
   background-color: #d0cfc4;
   color: #8c7a6b;
   border: double;
+}
+
+
+.PhotoCard {
+  width: 100%;
+  overflow: hidden;
+}
+
+.PhotoImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }

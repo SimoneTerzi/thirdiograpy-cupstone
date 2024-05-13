@@ -46,7 +46,7 @@ const MyHomepage = () => {
             </Col>
           ))}
         </Row>
-        <Link to="/PhotoPage"> {Biography}
+        <Link to="Portfolio"> {Biography}
           <Button className="BiograpyButton" variant="primary">
             VIEW FULL PORTFOLIO
           </Button>
