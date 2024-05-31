@@ -59,8 +59,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3030/api/photo-portfolio/deleteComment/663b86c7bb7bf97a4257e545/663b8734bb7bf97a4257e54f
-
+DELETE http://localhost:3030/api/photo-portfolio/deleteComment/6643ae905ea27ac59e590610/6644f31b5ea27ac59e590a22
 
 ###
 
