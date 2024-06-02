@@ -1,5 +1,3 @@
-
-
 const express = require("express");
 const router = express.Router();
 const Photosporfoliomodel = require("./models.photo.portfolio");
@@ -286,9 +284,9 @@ router.get("/getPhotoPortfolioComments/:id", async (request, response) => {
       });
     }
 
-    const comments = photo.comments.map(comment => ({
+    const comments = photo.comments.map((comment) => ({
       text: comment.text,
-      rating: comment.rating
+      rating: comment.rating,
     }));
 
     response.status(200).send(comments);
@@ -302,6 +300,4 @@ router.get("/getPhotoPortfolioComments/:id", async (request, response) => {
   }
 });
 
-
 module.exports = router;
-
