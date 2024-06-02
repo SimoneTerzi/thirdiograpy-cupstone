@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./MyNavbar.css";
+import { Link } from "react-router-dom";
 
 function MyNavbar() {
   return (
@@ -27,21 +28,21 @@ function MyNavbar() {
             style={{ width: "70%" }}
           >
             <Nav.Link
-              to="/#home"
+              as={Link} to="/#home"
               className="Navlink"
               style={{ marginRight: "3rem", marginLeft: "25px" }}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              to="/Portfolio"
+              as={Link} to="/Portfolio"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-              to="/Ethical"
+             as={Link} to="/Ethical"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
@@ -49,7 +50,7 @@ function MyNavbar() {
             </Nav.Link>
 
             <Nav.Link
-              to="/biography"
+              as={Link} to="/biography"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
