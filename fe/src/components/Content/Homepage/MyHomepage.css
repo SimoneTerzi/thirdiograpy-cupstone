@@ -26,6 +26,12 @@ header {
   text-align: center;
 }
 
+@media (max-width: 475px) {
+  .h1 {
+    font-size: 2rem;
+  }
+}
+
 .Ethical {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -67,8 +73,6 @@ header {
   opacity: 1;
 }
 
-
-
 .card-img-top:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
@@ -83,7 +87,7 @@ header {
   color: #d0cfc4;
 }
 
-.BiograpyButton:hover{
+.BiograpyButton:hover {
   background-color: #d0cfc4;
   color: #8c7a6b;
   border: double;
@@ -96,7 +100,6 @@ header {
   text-align: center;
   padding-bottom: 10px;
 }
-
 
 .EthicalPH {
   padding-top: 5rem;

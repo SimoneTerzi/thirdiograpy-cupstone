@@ -88,9 +88,43 @@ body, html {
     width: 100%;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
   .navbar-brand {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navarbrand {
+    font-size: 15px; 
+    margin-right: 1rem; 
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  .navbar-nav .nav-link {
+    font-size: 15px; 
+    margin-right: 1rem; 
+  }
+}
+
+@media (max-width: 300px) {
+  .navarbrand {
+    font-size: 15px; 
+    margin-right: 1rem; 
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  .navbar-nav .nav-link {
+    font-size: 15px; 
+    margin-right: 1rem; 
   }
 }
