@@ -54,22 +54,30 @@ body, html {
 }
 
 .navarbrand:hover{
- 
   color: #D0CFC4;
 }
-
-
 
 .Navbar-Collapse {
   margin-left: 8rem;
 }
 
+@media (max-width: 520px) {
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 992px) {
   .navbar-collapse {
-    background-color: #8C7A6B; /* Colore di sfondo del menu a tendina */
+    background-color: #8C7A6B;
   }
   .navbar-nav .nav-link {
-    color: #D0CFC4 !important; /* Colore del testo dei link nel menu a tendina */
+    color: #D0CFC4 !important;
   }
 }
