@@ -27,21 +27,21 @@ function MyNavbar() {
             style={{ width: "70%" }}
           >
             <Nav.Link
-              href="/#home"
+              to="/#home"
               className="Navlink"
               style={{ marginRight: "3rem", marginLeft: "25px" }}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              href="/Portfolio"
+              to="/Portfolio"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-              href="/Ethical"
+              to="/Ethical"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
@@ -49,7 +49,7 @@ function MyNavbar() {
             </Nav.Link>
 
             <Nav.Link
-              href="/biography"
+              to="/biography"
               className="Navlink"
               style={{ marginRight: "3rem" }}
             >
