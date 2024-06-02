@@ -4,7 +4,7 @@ const cors = require("cors"); // Importa il modulo CORS
 
 require("dotenv").config();
 
-const WEB_SERVICES = process.env.WEB_SERVICES; // Modifica la porta per utilizzare il servizio web
+const PORT = process.env.PORT || 3030;
 const app = express();
 
 const photosPortfolioRoute = require("./library/PhotoPortfolio/routes.photos.porfolio");
@@ -22,6 +22,6 @@ mongoose
   .then(() => console.log("Database successfully connected"))
   .catch((error) => console.error("Db connection error!", error));
 
-app.listen(WEB_SERVICES, () => {
-  console.log(`Server connected and listening on port ${WEB_SERVICES}`);
+app.listen(PORT, () => {
+  console.log(`Server connected and listening on port ${PORT}`);
 });

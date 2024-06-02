@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Configurazione dell'istanza di axios
 const axiosInstance = axios.create({
-  baseURL: process.env.WEB_SERVICES,
+  baseURL: "https://thirdiograpy-cupstone.onrender.com",
 });
 
 // Funzioni per il portfolio fotografico
