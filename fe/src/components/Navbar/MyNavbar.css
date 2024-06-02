@@ -73,9 +73,24 @@ body, html {
   }
 }
 
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #8C7A6B;
+  }
+  .navbar-nav .nav-link {
+    color: #D0CFC4 !important;
+  }
+}
+
 @media (max-width: 470px) {
   .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .navbar-brand {
+    font-size: 20px;
   }
 }
