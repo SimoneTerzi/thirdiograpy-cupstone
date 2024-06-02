@@ -14,7 +14,7 @@ function MyNavbar() {
             src="https://res.cloudinary.com/dtem45qog/image/upload/v1715430959/Logo_Thirdiograpy-favicon_orytj3.png"
             width="80"
             height="80"
-            className="d-inline-block align-center"
+            className="d-inline-block align-center Logo"
             alt="Thirdiography Logo"
             style={{ marginRight: "5px" }}
           />
