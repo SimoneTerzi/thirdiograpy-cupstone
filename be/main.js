@@ -4,7 +4,7 @@ const cors = require("cors"); // Importa il modulo CORS
 
 require("dotenv").config();
 
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || WEB_SERVICES;
 const app = express();
 
 const photosPortfolioRoute = require("./library/PhotoPortfolio/routes.photos.porfolio");
