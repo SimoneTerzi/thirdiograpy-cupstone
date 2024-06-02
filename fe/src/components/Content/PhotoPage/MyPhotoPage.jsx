@@ -52,10 +52,8 @@ const MyPhotoPage = () => {
     e.preventDefault();
     try {
       await addComment(photoId, newComment);
-      // Aggiorna i commenti dopo l'aggiunta di un nuovo commento
       const updatedComments = await getPhotoCommentsById(photoId);
       setComments(updatedComments);
-      // Chiudi il modale dopo l'invio del commento
       handleModalClose();
     } catch (error) {
       console.error("Error adding comment:", error);

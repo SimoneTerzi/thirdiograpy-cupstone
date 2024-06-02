@@ -63,3 +63,13 @@ body, html {
 .Navbar-Collapse {
   margin-left: 8rem;
 }
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #8C7A6B; /* Colore di sfondo del menu a tendina */
+  }
+  .navbar-nav .nav-link {
+    color: #D0CFC4 !important; /* Colore del testo dei link nel menu a tendina */
+  }
+}
