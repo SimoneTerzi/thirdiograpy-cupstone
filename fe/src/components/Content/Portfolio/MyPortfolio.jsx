@@ -4,25 +4,23 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import axios from "axios";
+import { fetchPhotos } from "../../Axios/Axios";
 import "./MyPortfolio.css";
 
 const MyPortfolio = () => {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    const fetchPhotos = async () => {
+    const getPhotos = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3030/api/photo-portfolio/getPhotosPortfolio"
-        );
-        setPhotos(response.data);
+        const photosData = await fetchPhotos(); 
+        setPhotos(photosData);
       } catch (error) {
         console.error("Error fetching photos:", error);
       }
     };
 
-    fetchPhotos();
+    getPhotos();
   }, []);
 
   return (
@@ -53,4 +51,3 @@ const MyPortfolio = () => {
 };
 
 export default MyPortfolio;
-
