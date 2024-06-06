@@ -80,7 +80,7 @@ const MyHomepage = () => {
           catturare immagini in modo rispettoso e consapevole, sempre attento
           all’impatto che le mie foto possono avere sulle persone e
           sull’ambiente. In primo luogo, la fotografia etica riguarda il
-          rispetto dei....
+          rispetto dei...
         </p>
 
         <Link to="/Ethical">
