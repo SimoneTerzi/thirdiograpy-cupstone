@@ -30,10 +30,10 @@ const MyHomepage = () => {
         <p className="Ethical">Ethical amateur photographer</p>
         <h2 className="portfolio">Portfolio</h2>
         <p id="Biograpy">
-          Questo è un piccolo anteprima del Portfolio, dagli uno sguardo se
+          Questa è una piccola anteprima del Portfolio, dagli uno sguardo,e se
           vuoi, lascia un commento.<br></br>
           Qui verranno caricate foto settimanalmente, in base ai lavori che
-          porterò avanti
+          porterò avanti.
         </p>
         <Row xs={1} md={2} lg={3} className="justify-content-center">
           {randomPhotos.map((photo) => (
