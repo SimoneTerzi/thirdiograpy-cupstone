@@ -16,7 +16,7 @@ const MyEthicalPage = () => {
         all’impatto che le mie foto possono avere sulle persone e sull’ambiente.
         In primo luogo, la fotografia etica riguarda il rispetto dei soggetti.
         Quando fotografo persone, mi assicuro di ottenere il loro consenso
-        informato, specialmente in situazioni vulnerabili o delicate. È
+        ingormato. È
         importante per me che si sentano a proprio agio e che comprendano come
         intendo utilizzare le immagini. Questo rispetto si estende anche alla
         rappresentazione dei soggetti: evito di perpetuare stereotipi o di
@@ -30,16 +30,12 @@ const MyEthicalPage = () => {
         fotografia etica implica anche l’integrità nel processo di editing.
         Mentre è comune praticare una certa quantità di post-produzione, mi
         impegno a non alterare le immagini in modo tale da distorcere la realtà
-        o ingannare lo spettatore. La veridicità dell’immagine è cruciale,
-        soprattutto in ambiti come il fotogiornalismo, dove l’autenticità è
-        essenziale. Inoltre, sono consapevole dell’importanza della privacy e
+        o ingannare lo spettatore. La veridicità dell’immagine è cruciale. Inoltre, sono consapevole dell’importanza della privacy e
         dei diritti d’autore. Rispetto la proprietà intellettuale altrui e sono
         attento a non utilizzare immagini senza il dovuto permesso. Allo stesso
         modo, proteggo i diritti sulle mie fotografie, assicurandomi che siano
         utilizzate in modo appropriato e con il mio consenso. Infine, la
-        fotografia etica si estende alla condivisione e alla pubblicazione delle
-        immagini. Prima di diffondere una foto, rifletto attentamente
-        sull’impatto che potrebbe avere. Mi chiedo: “Questa immagine potrebbe
+        fotografia etica consiste nel riflettere sull'impatto che una foto potrebbe avere. Mi chiedo: “Questa immagine potrebbe
         danneggiare qualcuno? Contribuisce a un discorso costruttivo?
         Rappresenta i soggetti con dignità?” Solo dopo aver risposto a queste
         domande, decido se pubblicare o meno. In conclusione, la fotografia
