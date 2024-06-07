@@ -16,7 +16,7 @@ const MyEthicalPage = () => {
         all’impatto che le mie foto possono avere sulle persone e sull’ambiente.
         In primo luogo, la fotografia etica riguarda il rispetto dei soggetti.
         Quando fotografo persone, mi assicuro di ottenere il loro consenso
-        ingormato. È
+        informato. È
         importante per me che si sentano a proprio agio e che comprendano come
         intendo utilizzare le immagini. Questo rispetto si estende anche alla
         rappresentazione dei soggetti: evito di perpetuare stereotipi o di
