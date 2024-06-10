@@ -27,7 +27,7 @@ const MyPortfolio = () => {
     <main className="PortfoliolMain justify-content-center">
       <h2 className="PortfolioTitle">My Portfolio</h2>
       <div className="PhotoGrid">
-        <Row xs={1} sm={2} md={3} lg={4} className="justify-content-center PhotoGridRow">
+        <Row xs={1} sm={2} md={3} lg={3} className="justify-content-center PhotoGridRow">
           {photos.map((photo) => (
             <Col key={photo._id} className="d-flex align-items-stretch">
               <div>

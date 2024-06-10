@@ -9,7 +9,7 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="Navbar">
       <Container>
-        <Navbar.Brand className="justify-content-center navarbrand">
+        <Navbar.Brand className="navarbrand">
           <img
             src="https://res.cloudinary.com/dtem45qog/image/upload/v1715430959/Logo_Thirdiograpy-favicon_orytj3.png"
             width="80"
@@ -23,36 +23,32 @@ function MyNavbar() {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav
-            className="justify-content-center NavAcc"
-            style={{ width: "70%" }}
-          >
+          <Nav className="ml-auto NavAcc">
             <Nav.Link
-              as={Link} to="/#home"
+              as={Link}
+              to="/#home"
               className="Navlink"
-              style={{ marginRight: "3rem", marginLeft: "25px" }}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              as={Link} to="/Portfolio"
+              as={Link}
+              to="/Portfolio"
               className="Navlink"
-              style={{ marginRight: "3rem" }}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-             as={Link} to="/Ethical"
+              as={Link}
+              to="/Ethical"
               className="Navlink"
-              style={{ marginRight: "3rem" }}
             >
               Etichal
             </Nav.Link>
-
             <Nav.Link
-              as={Link} to="/biography"
+              as={Link}
+              to="/biography"
               className="Navlink"
-              style={{ marginRight: "3rem" }}
             >
               Biografia
             </Nav.Link>
