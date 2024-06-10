@@ -16,7 +16,7 @@ const MyBiography = () => {
         di catturare non solo le loro immagini, ma anche le storie e le emozioni
         che esse racchiudono. La fotografia per me è un mezzo potente per
         esplorare e condividere la complessità dell’esperienza umana. Ogni
-        ritratto che scatto è un atto di scoperta, un’opportunità per
+        ritratto è una scoperta, un’opportunità per
         connettersi con l’altro e per raccontare una storia attraverso uno
         sguardo, un gesto, un’espressione. Nel mio lavoro, pongo grande enfasi
         sull’etica, assicurandomi che ogni foto sia il risultato di un incontro

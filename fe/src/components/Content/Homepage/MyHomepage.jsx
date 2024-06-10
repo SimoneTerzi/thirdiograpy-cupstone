@@ -30,10 +30,10 @@ const MyHomepage = () => {
         <p className="Ethical">Ethical amateur photographer</p>
         <h2 className="portfolio">Portfolio</h2>
         <p id="Biograpy">
-          Questa è un piccolo anteprima Del Portfolio, dagli uno sguardo se
+          Questa è una piccola anteprima del Portfolio, dagli uno sguardo,e se
           vuoi, lascia un commento.<br></br>
           Qui verranno caricate foto settimanalmente, in base ai lavori che
-          porterò avanti
+          porterò avanti.
         </p>
         <Row xs={1} md={2} lg={3} className="justify-content-center">
           {randomPhotos.map((photo) => (
@@ -57,7 +57,7 @@ const MyHomepage = () => {
           etica come fotografo ritrattista amatoriale. La mia arte è guidata dal
           desiderio di rappresentare le persone con integrità e rispetto,
           cercando di catturare non solo le loro immagini, ma anche le storie e
-          le emozioni che esse.....
+          le emozioni che esse...
         </p>
 
         <Link to="/biography">
@@ -80,7 +80,7 @@ const MyHomepage = () => {
           catturare immagini in modo rispettoso e consapevole, sempre attento
           all’impatto che le mie foto possono avere sulle persone e
           sull’ambiente. In primo luogo, la fotografia etica riguarda il
-          rispetto dei....
+          rispetto dei...
         </p>
 
         <Link to="/Ethical">
