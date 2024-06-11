@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
 
 
+body,
+html {
+  padding-top: 8rem;
+  
+}
+
+@media (max-width: 992px) {
+  body,
+  html {
+    padding-top: 0;
+  }
+}
 
 .Navbar {
   position: fixed;
@@ -10,6 +22,7 @@
   background-color: #8c7a6b;
   z-index: 1000;
   transition: height 0.3s; 
+
 }
 
 .navarbrand {
@@ -60,39 +73,19 @@
 }
 
 @media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #8c7a6b;
-  }
-  .navbar-nav {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .navbar-nav .nav-link {
-    color: #d0cfc4 !important;
-  }
-}
-
-@media (max-width: 992px) {
   .Navbar {
     position: relative; 
-    height: auto;
+    height: auto; 
   }
-
   .navbar-collapse {
     background-color: #8c7a6b;
   }
-
   .navbar-nav {
     margin-left: auto;
     margin-right: 0;
   }
-
   .navbar-nav .nav-link {
     color: #d0cfc4 !important;
-  }
-
-  .navbar-toggler {
-    margin-right: 0;
   }
 }
 

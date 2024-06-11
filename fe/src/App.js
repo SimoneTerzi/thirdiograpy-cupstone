@@ -6,7 +6,6 @@ import HomePage from "../src/pages/HomePage";
 import Biography from "./pages/Biography";
 import Ethical from "./pages/Ethical";
 import Portfolio from "./pages/Portfolio";
-
 import MyPhotoPage from "./components/Content/PhotoPage/MyPhotoPage";
 
 const App = () => {
