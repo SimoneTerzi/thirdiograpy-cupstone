@@ -30,10 +30,12 @@ const MyPortfolio = () => {
         <Row xs={1} sm={2} md={3} lg={3} className="justify-content-center PhotoGridRow">
           {photos.map((photo) => (
             <Col key={photo._id} className="d-flex align-items-stretch">
-              <div>
+              <div className="g1-container">
                 <Link to={`/photo/${photo._id}`}>
-                  <Card className="w-100" style={{ margin: "1rem" }}>
-                    <Card.Img variant="top" src={photo.url} alt={photo.title} />
+                  <Card className="w-100" style={{ margin: "1rem", position: "relative" }}>
+                    <Card.Img className="g1" variant="top" src={photo.url} alt={photo.title} />
+                    <div className="g1-overlay"></div>
+                    <div className="hover-text">Lascia un pensiero</div>
                   </Card>
                 </Link>
               </div>

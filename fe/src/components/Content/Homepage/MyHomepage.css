@@ -74,10 +74,6 @@ header {
   opacity: 1;
 }
 
-.card-img-top:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-}
 
 .BiograpyButton {
   font-family: "Caesar Dressing", system-ui;
